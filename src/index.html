@@ -11,7 +11,145 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <form action="http://localhost:3000/api" method="post">
+      <fieldset class="personal-information">
+        <legend>Personal information</legend>
+        <div class="surname">
+          <label>
+        Surname:
+            <input type="text"
+            name="Surname"
+            autocomplete="off">
+          </label>
+        </div>
+        <div class="name">
+          <label>
+        Name:
+            <input type="text"
+            name="Name"
+            autocomplete="off">
+          </label>
+        </div>
+        <div class="age">
+          <label>
+        How old are You?
+            <input type="number"
+            name="Age"
+            value="12"
+            min="1"
+            max="100"
+            required>
+          </label>
+        </div>
+        <div class="date">
+          <label>
+          Full date of birth:
+            <input type="date" name="Date__of__birth">
+          </label>
+        </div>
+        <div class="agreement">
+          <label>
+        I accept the term of the agreement
+            <input type="checkbox" name="Term of the agreement">
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="Registration">
+        <legend>Registration</legend>
+        <div class="email">
+          <label>
+      E-mail:
+            <input type="email" name="email"
+          placeholder="email@example.com" required>
+          </label>
+      </input>
+        </div>
+        <div class="password">
+          <label>
+        Password:
+            <input type="password" name="password"
+            required
+            minlength="5"
+            maxlength="20">
+            </input>
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="Facts">
+        <legend>An interesting fact about you!</legend>
+        <div class="cats">
+         Do you love cats?
+          <label>
+            <input type="radio" name ="Do_you_love_cats??"
+            value="yes">
+           Yes
+            <input type="radio" name ="Do_you_love_cats?"
+            value="no">
+          No
+          </label>
+        </div>
+        <div class="color">
+          <label>
+        What is your favorite color?
+            <input type="color" name="favorite_color">
+          </input>
+          </label>
+        </div>
+        <div class="time">
+          <label>
+          What time do you go to bad?
+            <input type="time" name="go_to_bed">
+          </input>
+          </label>
+        </div>
+        <div class="car">
+          <label>
+          What are your favorite brand of cars?
+            <select name="favorite__car"
+            id="car"
+            multiple>
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
+              <option value=" "></option>
+            </select>
+          </input>
+          </label>
+        </div>
+        <div class="work">
+          <label>
+          How do you rate our work?
+            <input type="range"
+            name="rate_of_work"
+            value="0">
+            </input>
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="Additional_info">
+        <legend>Additional info:</legend>
+        <div class="comment">
+          <label>
+        Comments:
+            <textarea name="Comment">
+            </textarea>
+          </label>
+        </div>
+        <div class="recomendation">
+          <label>
+          Would you recomend us?
+            <select name="yes_or_no" id="yes_or_no">
+              <option value=" " disabled
+              selected>
+              </option>
+              <option value="yes" selected>yes</option>
+              <option value="no">no</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
+      <button type="submit" name="submit_button" >Submit</button>
+    </form>
   </body>
 </html>
