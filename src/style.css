@@ -1,52 +1,11 @@
-.name {
-  margin-top: 10px;
-}
-
-.age {
-  margin-top: 10px;
-}
-
-.date {
-  margin-top: 10px;
-}
-
-.agreement {
-  margin-top: 10px;
-}
-
-.Registration {
+.block_title {
   margin-top: 20px;
 }
 
-.password {
-  margin-top: 10px;
-}
-
-.Facts {
-  margin-top: 20px;
-}
-
-.color {
-  margin-top: 10px;
-}
-
-.time {
-  margin-top: 10px;
-}
-
-.car {
-  margin-top: 10px;
-}
-
-.work {
+.field {
   margin-top: 10px;
 }
 
 .Additional_info {
-  margin-top: 20px;
   margin-bottom: 10px;
-}
-
-.recomendation {
-  margin-top: 10px;
 }
